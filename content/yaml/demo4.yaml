@@ -1,0 +1,16 @@
+id: e20a8fcb-d01e-4e1c-b36b-4f97f6c5b2c8
+name: "Sophie Turner"
+email: "sophie.turner@sample.net"
+preferences:
+  theme: "light"
+  notifications: false
+  language: "German"
+last_login: "2025-10-10T23:45:15Z"
+subscriptions:
+  - "basic"
+  - "exclusive_offers"
+  - "weekly_reports"
+metadata:
+  user_agent: "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.5735.91 Safari/537.36"
+  location: "Berlin, Germany"
+status: "active"

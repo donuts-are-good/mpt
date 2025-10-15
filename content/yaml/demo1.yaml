@@ -1,0 +1,16 @@
+id: 9824f0a3-c719-43b2-b5c2-7fa736ff6f1d
+name: "Ansel Jameson"
+email: "ansel.jameson@example.com"
+preferences:
+  theme: "dark"
+  notifications: true
+  language: "English"
+last_login: "2025-10-12T14:32:00Z"
+subscriptions:
+  - "premium"
+  - "newsletter"
+  - "beta_testers"
+metadata:
+  user_agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36"
+  location: "Los Angeles, CA"
+status: "active"

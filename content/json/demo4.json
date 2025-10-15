@@ -1,0 +1,161 @@
+{
+    "metadata": {
+      "id": 102938,
+      "version": "1.4.3",
+      "timestamp": "2025-10-15T12:45:30Z",
+      "active": true,
+      "archived": false,
+      "tags": ["testing", "json", "yaml", "conversion"],
+      "notes": null
+    },
+    "user": {
+      "user_id": "u_239483",
+      "name": {
+        "first": "Léa",
+        "last": "O'Connell"
+      },
+      "email": "lea.oconnell@example.org",
+      "phone_numbers": ["+1-202-555-0173", "+44 20 7946 0958"],
+      "dob": "1989-03-25",
+      "preferences": {
+        "notifications": {
+          "email": true,
+          "sms": false,
+          "push": true
+        },
+        "theme": "dark",
+        "languages": ["en", "fr", "ja"]
+      },
+      "last_login": null,
+      "subscription": {
+        "plan": "Pro",
+        "renewal_date": "2026-01-01",
+        "price": 19.99,
+        "currency": "USD",
+        "discount": 0.1,
+        "features": [
+          "Unlimited Projects",
+          "Advanced Analytics",
+          "Priority Support"
+        ]
+      },
+      "is_verified": true
+    },
+    "system_logs": [
+      {
+        "log_id": "log_001",
+        "timestamp": "2025-10-15T10:00:00Z",
+        "severity": "info",
+        "message": "User login successful.",
+        "context": {
+          "ip": "192.168.1.42",
+          "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)"
+        }
+      },
+      {
+        "log_id": "log_002",
+        "timestamp": "2025-10-15T10:05:22Z",
+        "severity": "warning",
+        "message": "Disk usage at 85%",
+        "context": {
+          "disk": "/dev/sda1",
+          "usage": 85.23,
+          "threshold": 80
+        }
+      },
+      {
+        "log_id": "log_003",
+        "timestamp": "2025-10-15T10:10:00Z",
+        "severity": "error",
+        "message": "Failed to connect to database.",
+        "context": {
+          "retries": 3,
+          "timeout": "5s"
+        }
+      }
+    ],
+    "products": [
+      {
+        "product_id": "sku_0001",
+        "name": "Wireless Mouse",
+        "price": 25.5,
+        "in_stock": true,
+        "categories": ["electronics", "accessories"],
+        "dimensions": {
+          "width": 6.1,
+          "height": 3.4,
+          "depth": 1.2
+        },
+        "weight": 0.2,
+        "colors": ["black", "white", "blue"],
+        "warranty_years": 2,
+        "release_date": "2024-06-01"
+      },
+      {
+        "product_id": "sku_0002",
+        "name": "4K Monitor",
+        "price": 299.99,
+        "in_stock": false,
+        "categories": ["electronics", "monitors"],
+        "dimensions": {
+          "width": 24.5,
+          "height": 14.8,
+          "depth": 2.1
+        },
+        "weight": 4.5,
+        "colors": ["black"],
+        "warranty_years": 3,
+        "release_date": "2023-11-15"
+      }
+    ],
+    "config": {
+      "max_users": 5000,
+      "debug_mode": false,
+      "pi_estimate": 3.1415926535,
+      "maintenance_window": {
+        "start": "02:00",
+        "end": "04:00",
+        "timezone": "UTC"
+      },
+      "features_enabled": [
+        "api_access",
+        "beta_ui",
+        "multi_region"
+      ],
+      "advanced_settings": {
+        "retry_intervals": [1, 2, 5, 10],
+        "backup_schedule": {
+          "daily": true,
+          "weekly": ["Sunday"],
+          "monthly": null
+        },
+        "thresholds": {
+          "cpu": "75%",
+          "memory": "80%",
+          "disk": "90%"
+        }
+      }
+    },
+    "unicode_test": {
+      "emoji": "🔥💾✅",
+      "languages": {
+        "arabic": "مرحبا",
+        "japanese": "こんにちは",
+        "russian": "Привет",
+        "hebrew": "שלום"
+      },
+      "special_chars": "\"quotes\", \\slashes\\, \nnewlines\n, \ttabs\t"
+    },
+    "mixed_array": [
+      42,
+      "text",
+      true,
+      null,
+      {
+        "nested": "object",
+        "array": [1, 2, 3]
+      },
+      [4, 5, 6]
+    ]
+  }
+  

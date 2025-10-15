@@ -1,0 +1,43 @@
+{
+  "user": {
+    "id": 1024,
+    "name": "Jane Doe",
+    "email": "jane.doe@example.com",
+    "email_verified": true,
+    "profile": {
+      "age": 29,
+      "gender": "female",
+      "bio": "Coffee lover ☕. Frontend developer at Techify.",
+      "location": {
+        "city": "San Francisco",
+        "state": "CA",
+        "country": "USA"
+      },
+      "social_links": null
+    },
+    "preferences": {
+      "newsletter_subscribed": false,
+      "notifications": {
+        "email": true,
+        "sms": false,
+        "push": true
+      },
+      "theme": "dark"
+    },
+    "devices": [
+      {
+        "type": "laptop",
+        "os": "macOS",
+        "last_active": "2025-10-14T18:23:45Z"
+      },
+      {
+        "type": "phone",
+        "os": "iOS",
+        "last_active": "2025-10-15T08:10:00Z"
+      }
+    ],
+    "tags": ["developer", "beta_user", "premium"],
+    "login_attempts": [163, 158, 174],
+    "last_login": null
+  }
+}

@@ -1,0 +1,64 @@
+user:
+  id: 4567389
+  name: Sarah Matthews
+  email: sarah.matthews@example.com
+  dob: 1988-06-15
+  location:
+    city: San Francisco
+    state: California
+    country: USA
+  preferences:
+    notifications: true
+    dark_mode: true
+    language: en-US
+    time_zone: "PST"
+  social_links:
+    linkedin: https://www.linkedin.com/in/sarah-matthews
+    twitter: https://twitter.com/sarahm88
+    instagram: https://www.instagram.com/sarah_matthews
+  subscription:
+    plan: Premium
+    start_date: 2023-01-15
+    renewal_date: 2024-01-15
+    payment_method: Credit Card
+  work:
+    company: Innovatech Solutions
+    role: Senior Software Engineer
+    department: Engineering
+    manager: John Simmons
+    projects:
+      - name: "AI-driven Recommendation System"
+        status: "In Progress"
+        deadline: 2023-12-31
+      - name: "Cloud Migration Strategy"
+        status: "Completed"
+        deadline: 2023-06-30
+  preferences:
+    meal:
+      favorite_cuisine: Italian
+      diet: Vegetarian
+    fitness:
+      gym: "Gold's Gym SF"
+      routine: "Cardio, Yoga, Weight Training"
+    hobbies:
+      - "Reading"
+      - "Traveling"
+      - "Photography"
+    travel:
+      frequent_destinations:
+        - "Japan"
+        - "Italy"
+        - "Canada"
+      upcoming_trip:
+        destination: "Switzerland"
+        date: "2024-05-10"
+  billing_address:
+    street: "1234 Market St"
+    city: "San Francisco"
+    state: "California"
+    zip: "94103"
+    country: "USA"
+  preferences:
+    email_frequency: "Weekly"
+    marketing_notifications: true
+  last_login: "2025-10-10T14:32:00Z"

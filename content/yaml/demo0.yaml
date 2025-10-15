@@ -1,0 +1,98 @@
+app:
+  name: MyAwesomeApp
+  version: 1.3.0
+  description: A powerful tool for managing tasks and projects
+  maintainers:
+    - name: Jane Doe
+      role: Lead Developer
+      email: jane.doe@example.com
+    - name: John Smith
+      role: UI/UX Designer
+      email: john.smith@example.com
+  repository: https://github.com/awesome/my-awesome-app
+  license: MIT
+
+settings:
+  environment: production
+  debug: false
+  logLevel: info
+
+database:
+  host: db.myapp.com
+  port: 5432
+  username: app_user
+  password: "s3cur3P@ssw0rd"
+  dbName: my_awesome_app_db
+  ssl: true
+  backup:
+    enabled: true
+    schedule: "0 2 * * *" # Every day at 2 AM
+    retentionPeriod: 7 days
+
+api:
+  baseUrl: https://api.myawesomeapp.com/v1
+  timeout: 30 # in seconds
+  rateLimit:
+    maxRequests: 1000
+    timeWindow: 3600 # in seconds
+
+features:
+  authentication:
+    enabled: true
+    strategies:
+      - OAuth2
+      - JWT
+  emailNotifications:
+    enabled: true
+    smtpServer: smtp.mailtrap.io
+    smtpPort: 587
+    smtpUser: mailtrap_user
+    smtpPassword: "smtpP@ssw0rd"
+  dataSync:
+    enabled: true
+    syncInterval: 5 # in minutes
+    retries: 3
+    retryDelay: 60 # in seconds
+
+users:
+  - username: johndoe
+    role: admin
+    email: johndoe@myapp.com
+    status: active
+    lastLogin: "2025-10-01T14:22:00Z"
+  - username: janedoe
+    role: editor
+    email: janedoe@myapp.com
+    status: inactive
+    lastLogin: "2025-09-28T11:11:00Z"
+
+monitoring:
+  enabled: true
+  services:
+    - name: web
+      url: https://myawesomeapp.com/health
+      checkInterval: 300 # in seconds
+    - name: api
+      url: https://api.myawesomeapp.com/health
+      checkInterval: 300 # in seconds
+  alerting:
+    enabled: true
+    emailAlerts:
+      recipients:
+        - ops@myapp.com
+        - support@myapp.com
+    threshold:
+      responseTime: 2000 # in milliseconds
+      errorRate: 0.05 # 5%
+
+dependencies:
+  - name: redis
+    version: 6.2
+    status: active
+  - name: elasticsearch
+    version: 7.10
+    status: inactive
+
+documentation:
+  url: https://docs.myawesomeapp.com
+  lastUpdated: "2025-10-01"

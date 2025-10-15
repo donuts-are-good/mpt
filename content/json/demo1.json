@@ -1,0 +1,48 @@
+{
+    "result": [
+      {
+        "message": "Hello, Isaiah! Your order number is: #38",
+        "phoneNumber": "1-423-980-9524 x443",
+        "phoneVariation": "+90 378 622 10 92",
+        "status": "active",
+        "name": {
+          "first": "Ebba",
+          "middle": "Sasha",
+          "last": "Tromp"
+        },
+        "username": "Ebba-Tromp",
+        "password": "SCwcWY97yVjeK5H",
+        "emails": [
+          "Estelle.Torphy@example.com",
+          "Mae95@example.com"
+        ],
+        "location": {
+          "street": "37644 Douglas Place",
+          "city": "New Aidan",
+          "state": "North Dakota",
+          "country": "Svalbard & Jan Mayen Islands",
+          "zip": "91591-2716",
+          "coordinates": {
+            "latitude": "15.2334",
+            "longitude": "141.6192"
+          }
+        },
+        "website": "https://ruddy-logistics.org",
+        "domain": "stiff-cirrus.org",
+        "job": {
+          "title": "Legacy Markets Officer",
+          "descriptor": "Dynamic",
+          "area": "Applications",
+          "type": "Officer",
+          "company": "Fay Inc"
+        },
+        "creditCard": {
+          "number": "6447-6231-4692-5500-6200",
+          "cvv": "000",
+          "issuer": "maestro"
+        },
+        "uuid": "41d52efe-e247-4fde-a919-2079ebf581f8",
+        "objectId": "68efebcfcdd8c16349db421d"
+      }
+    ]
+  }
