@@ -1,4 +1,4 @@
-module mpt
+module github.com/donuts-are-good/mpt
 
 go 1.25.3
 
