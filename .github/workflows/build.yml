@@ -33,7 +33,7 @@ jobs:
           GOOS=darwin GOARCH=arm64 go build -o mpt-macos .
       
       - name: Upload artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: binaries
           path: |
