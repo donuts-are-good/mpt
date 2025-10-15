@@ -184,19 +184,28 @@ func batchConvert(opts options) error {
 	return nil
 }
 
-func convertAndWrite(inputPath, outputPath string, fromFormat, toFormat Format) error {
+func readAndConvert(inputPath string, fromFormat, toFormat Format) ([]byte, error) {
 	data, err := os.ReadFile(inputPath)
 	if err != nil {
-		return fmt.Errorf("read %s: %w", inputPath, err)
+		return nil, fmt.Errorf("read %s: %w", inputPath, err)
 	}
 
 	converted, err := convertData(data, fromFormat, toFormat)
 	if err != nil {
-		return fmt.Errorf("convert %s to %s: %w", fromFormat, toFormat, err)
+		return nil, fmt.Errorf("convert %s to %s: %w", fromFormat, toFormat, err)
 	}
 
 	if needsTrailingNewline(toFormat) {
 		converted = appendNewline(converted)
+	}
+
+	return converted, nil
+}
+
+func convertAndWrite(inputPath, outputPath string, fromFormat, toFormat Format) error {
+	converted, err := readAndConvert(inputPath, fromFormat, toFormat)
+	if err != nil {
+		return err
 	}
 
 	if err := os.WriteFile(outputPath, converted, 0o644); err != nil {
@@ -207,18 +216,9 @@ func convertAndWrite(inputPath, outputPath string, fromFormat, toFormat Format) 
 }
 
 func convertToStdout(inputPath string, fromFormat, toFormat Format) error {
-	data, err := os.ReadFile(inputPath)
+	converted, err := readAndConvert(inputPath, fromFormat, toFormat)
 	if err != nil {
-		return fmt.Errorf("read %s: %w", inputPath, err)
-	}
-
-	converted, err := convertData(data, fromFormat, toFormat)
-	if err != nil {
-		return fmt.Errorf("convert %s to %s: %w", fromFormat, toFormat, err)
-	}
-
-	if needsTrailingNewline(toFormat) {
-		converted = appendNewline(converted)
+		return err
 	}
 
 	_, err = os.Stdout.Write(converted)
@@ -226,7 +226,11 @@ func convertToStdout(inputPath string, fromFormat, toFormat Format) error {
 }
 
 func viewFile(inputPath string) error {
-	return convertToStdout(inputPath, FormatMsgpack, FormatJSON)
+	fromFormat, err := detectFormat(inputPath)
+	if err != nil {
+		return err
+	}
+	return convertToStdout(inputPath, fromFormat, FormatJSON)
 }
 
 func (f Format) String() string {
