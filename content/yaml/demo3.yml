@@ -1,0 +1,16 @@
+id: 2314df1a-8d79-4c91-b825-c28de3efb4f3
+name: "Raul Espinoza"
+email: "raul.espinoza@domain.com"
+preferences:
+  theme: "dark"
+  notifications: true
+  language: "Spanish"
+last_login: "2025-10-01T08:15:00Z"
+subscriptions:
+  - "premium"
+  - "news_digest"
+  - "exclusive_content"
+metadata:
+  user_agent: "Mozilla/5.0 (Linux; Android 12; Pixel 6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.93 Mobile Safari/537.36"
+  location: "Mexico City, Mexico"
+status: "active"

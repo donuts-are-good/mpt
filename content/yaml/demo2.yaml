@@ -1,0 +1,15 @@
+id: b3d730cf-2f62-473b-8329-6cb27e063b01
+name: "Leila Kavanagh"
+email: "leila.kavanagh@example.org"
+preferences:
+  theme: "light"
+  notifications: false
+  language: "French"
+last_login: "2025-09-30T19:05:45Z"
+subscriptions:
+  - "basic"
+  - "workshop_invites"
+metadata:
+  user_agent: "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Safari/537.36"
+  location: "Paris, France"
+status: "inactive"

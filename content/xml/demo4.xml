@@ -1,0 +1,18 @@
+<configuration>
+    <settings>
+        <setting name="max_connections" value="100"/>
+        <setting name="timeout" value="30"/>
+        <setting name="enable_ssl" value="true"/>
+        <setting name="cache_size" value="512MB"/>
+    </settings>
+    <database>
+        <host>localhost</host>
+        <port>3306</port>
+        <username>admin</username>
+        <password>password123</password>
+    </database>
+    <logging>
+        <level>INFO</level>
+        <log_file>/var/log/system.log</log_file>
+    </logging>
+</configuration>

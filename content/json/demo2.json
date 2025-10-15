@@ -1,0 +1,14 @@
+{
+  "name": "Test Widget",
+  "id": 12345,
+  "price": 9.99,
+  "in_stock": true,
+  "tags": ["new", "sale", "popular"],
+  "dimensions": {
+    "width": 10,
+    "height": 5,
+    "depth": 2.5
+  },
+  "related_ids": [54321, 67890],
+  "description": null
+}

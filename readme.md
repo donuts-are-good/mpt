@@ -2,11 +2,6 @@
 message pack tools
 
 ## syntax
-view msgpack as plaintext
-```
-mpt --view something.msgpack
-mpt -v something.msgpack
-```
 
 ## infer implied conversions by default
 
